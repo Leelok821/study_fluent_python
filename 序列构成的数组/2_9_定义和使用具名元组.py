@@ -7,8 +7,7 @@
 
 from collections import namedtuple
 
+City = namedtuple('City', 'name county population coordinate')
+tokyo = City._make(('Tokyo', 'Japan', 1122231, (129.22, 23.22)))
 
-City = namedtuple('City', 'name country population coordinates')
-tokyo = City('Tokyo', 'Japan', 36.9333, (35.689722, 139.691667))
-
-print(tokyo)
+print(tokyo._asdict())

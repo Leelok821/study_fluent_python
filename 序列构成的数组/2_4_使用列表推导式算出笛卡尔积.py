@@ -9,5 +9,5 @@
 
 colors = ['blue', 'red']
 sizes = ['S', 'M', 'L']
-shirts = [(s, c) for c in colors for s in sizes]
+shirts = [(x, y) for x in colors for y in sizes]
 print(shirts)
